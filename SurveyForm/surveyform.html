@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="surveyform.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <div id="formborder">
+            <p id="description">Let us know how frequently you use Social Media.</p>
+            <form id="survey-form">
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="name-label" for="name">* Name: </label>
+                    </div>
+                    <div class="rightab">
+                        <input autofocus type="text" id="name" class="input-field" placeholder="Enter your name" required>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="email-label" for="email">* Email: </label>
+                    </div>
+                    <div class="rightab">
+                        <input type="email" id="email" class="input-field" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="number-label" for="age">* Age: </label>
+                    </div>
+                    <div class="rightab">
+                        <input autofocus type="number" id="number" class="input-field" placeholder="Enter your age" min="1" max="125" required>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="dropdown" for="sm-check">* Which social media platform you use the most?: </label>
+                    </div>
+                    <div class="rightab">
+                        <select id="dropdown" name="curPos" class="dropdown">
+                            <option disabled value>Select an option</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Twitter">Twitter</option>
+                            <option value="Telegram">Telegram</option>
+                            <option value="Pinterest">Pinterest</option>
+                            <option value="Linkedin">Linkedin</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="user-activity" for="user-activity">* How much time do you daily spend on social media?: </label>
+                    </div>
+                    <div class="rightab">
+                        <ul style="list-style: none;">
+                            <li class="radio">
+                                <label>
+                                    <input name="radio-bts" value="1" type="radio" class="user-acitivty">Less Than 15 Minutes
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>
+                                    <input name="radio-bts" value="2" type="radio" class="user-acitivty">Between 15 - 30 Minutes
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>
+                                    <input name="radio-bts" value="3" type="radio" class="user-acitivty">Between 30 - 45 Minutes
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>
+                                    <input name="radio-bts" value="4" type="radio" class="user-acitivty">Around 1 hour
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>
+                                    <input name="radio-bts" value="5" type="radio" class="user-acitivty">Around 2 hours
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>
+                                    <input name="radio-bts" value="6" type="radio" class="user-acitivty">More than 2 hours
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="use-sm" for="use-sm">* One thing you like most about Social Media</label>
+                    </div>
+                    <div class="rightab">
+                        <select id="radio" name="curPos" class="dropdown">
+                            <option disabled value>Select an option</option>
+                            <option value="Friends">To make new friends</option>
+                            <option value="Chatting">To talk and chat with people</option>
+                            <option value="Knwowledge">To gain Knwowledge</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="sm-improvements" for="sm-improvements">* Things that can be done more through Social Media</label>
+                    </div>
+                    <div class="rightab">
+                        <ul style="list-style: none;">
+                            <li class="checkbox">
+                                <label>
+                                    <input type="checkbox"  value="1">Environment Awareness
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label>
+                                    <input type="checkbox"  value="2">Health Awareness
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label>
+                                    <input type="checkbox"  value="3">Education
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label>
+                                    <input type="checkbox"  value="4">Others
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="comments" for="comments">* Any Comments or Suggestions?</label>
+                    </div>
+                    <div class="rightab">
+                        <textarea name="comment" id="comments" style="height: 80px; width: 250px; resize:vertical horizontal;" placeholder="Enter your comments here"></textarea>
+                    </div>
+                </div>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
